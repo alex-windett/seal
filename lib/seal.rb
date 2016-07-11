@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-require 'pry-byebug'
 require 'yaml'
 
 require './lib/github_fetcher.rb'
