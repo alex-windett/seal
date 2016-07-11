@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-
+require 'pry-byebug'
 require 'yaml'
 
 require './lib/github_fetcher.rb'
@@ -17,7 +17,9 @@ class Seal
   end
 
   def bark
-    teams.each { |team| bark_at(team) }
+    teams.each do |team|
+        bark_at(team)
+    end
   end
 
   private
